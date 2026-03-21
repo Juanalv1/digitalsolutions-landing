@@ -56,7 +56,11 @@ export function ContactSection() {
       setErrors(newErrors);
       return;
     }
-    // No backend — visual confirmation only
+    // Build WhatsApp message and open
+    const servicio = formState.servicio || "No especificado";
+    const texto = `Hola DigitalSolutions! 👋\n\n*Nombre:* ${formState.nombre}\n*WhatsApp:* ${formState.whatsapp || "No indicado"}\n*Servicio:* ${servicio}\n\n*Mensaje:*\n${formState.mensaje}`;
+    const url = `https://wa.me/584145772057?text=${encodeURIComponent(texto)}`;
+    window.open(url, "_blank");
     setSubmitted(true);
   };
 
@@ -195,10 +199,10 @@ export function ContactSection() {
                     <Send size={28} style={{ color: "#2B7BE0" }} />
                   </div>
                   <h3 className="text-xl font-black text-white mb-3">
-                    ¡Mensaje enviado!
+                    ¡Abriendo WhatsApp!
                   </h3>
                   <p style={{ color: "rgba(200,223,254,0.7)" }} className="text-sm">
-                    Te respondemos en menos de 24 horas.
+                    Se abrió WhatsApp con tu mensaje listo para enviar.
                   </p>
                 </div>
               ) : (
