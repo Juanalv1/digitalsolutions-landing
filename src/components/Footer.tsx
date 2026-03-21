@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Instagram } from "lucide-react";
 
 export function Footer() {
@@ -14,13 +13,20 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
           {/* Logo blanco completo */}
           <a href="#" aria-label="DigitalSolutions — inicio">
-            <Image
-              src="/logotipo_claro.svg"
-              alt="DigitalSolutions"
-              width={160}
-              height={40}
-              className="h-8 w-auto"
-            />
+            <div style={{ overflow: "hidden", width: "210px", height: "35px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logotipo_claro.svg"
+                alt="DigitalSolutions"
+                style={{
+                  width: "344px",
+                  height: "86px",
+                  maxWidth: "none",
+                  marginLeft: "-56px",
+                  marginTop: "-29px",
+                }}
+              />
+            </div>
           </a>
 
           {/* Slogan */}

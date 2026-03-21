@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, MessageCircle } from "lucide-react";
+import { Send, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { PixelPatternBg } from "./LogoIsotipo";
 
 const serviceOptions = [
@@ -120,22 +121,16 @@ export function ContactSection() {
             <div className="flex flex-col gap-5">
               {[
                 {
-                  icon: Mail,
-                  label: "Email",
-                  value: "hola@dsolutions.dev",
-                  href: "mailto:hola@dsolutions.dev",
-                },
-                {
-                  icon: MessageCircle,
+                  icon: Instagram,
                   label: "Instagram",
                   value: "@dsolutions.dev",
                   href: "https://instagram.com/dsolutions.dev",
                 },
                 {
-                  icon: MapPin,
-                  label: "Remoto",
-                  value: "Trabajamos con clientes en todo el mundo",
-                  href: undefined,
+                  icon: MessageCircle,
+                  label: "WhatsApp",
+                  value: "+58 414 577 2057",
+                  href: "https://wa.me/584145772057",
                 },
               ].map((item) => {
                 const Icon = item.icon;
@@ -276,7 +271,7 @@ export function ContactSection() {
                       name="whatsapp"
                       type="tel"
                       autoComplete="tel"
-                      placeholder="+57 300 000 0000"
+                      placeholder="+58 414 577 2057"
                       value={formState.whatsapp}
                       onChange={handleChange}
                       className={inputClass}

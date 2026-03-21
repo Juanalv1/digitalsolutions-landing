@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export function Navbar() {
@@ -29,16 +28,24 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo — logotipo completo claro (isotipo + wordmark en blanco) */}
+        {/* Logo — recortado para mostrar solo el contenido real del SVG (canvas 2000x500, contenido en x:325-1515, y:170-370) */}
         <a href="#" className="flex items-center" aria-label="DigitalSolutions — inicio">
-          <Image
-            src="/logotipo_claro.svg"
-            alt="DigitalSolutions"
-            width={180}
-            height={45}
-            priority
-            className="h-9 w-auto"
-          />
+          {/* Recorte del canvas SVG 2000×500: contenido real en x[325-1515], y[170-370] */}
+          {/* Escala 0.185 → SVG 370×93px, contenido en 60px,31px → 220×37px visible */}
+          <div style={{ overflow: "hidden", width: "226px", height: "38px", flexShrink: 0 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logotipo_claro.svg"
+              alt="DigitalSolutions"
+              style={{
+                width: "370px",
+                height: "93px",
+                maxWidth: "none",
+                marginLeft: "-60px",
+                marginTop: "-31px",
+              }}
+            />
+          </div>
         </a>
 
         {/* Desktop nav */}
