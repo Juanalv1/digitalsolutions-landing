@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { LogoIsotipo } from "./LogoIsotipo";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export function Navbar() {
@@ -29,15 +29,16 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <LogoIsotipo size={36} white />
-          <span
-            className="text-white font-black text-xl tracking-tight"
-            style={{ fontFamily: "var(--font-nunito)" }}
-          >
-            Digital<span className="text-[#2B7BE0]">Solutions</span>
-          </span>
+        {/* Logo — logotipo completo claro (isotipo + wordmark en blanco) */}
+        <a href="#" className="flex items-center" aria-label="DigitalSolutions — inicio">
+          <Image
+            src="/logotipo_claro.svg"
+            alt="DigitalSolutions"
+            width={180}
+            height={45}
+            priority
+            className="h-9 w-auto"
+          />
         </a>
 
         {/* Desktop nav */}

@@ -1,4 +1,4 @@
-import { LogoIsotipo } from "./LogoIsotipo";
+import Image from "next/image";
 import { Instagram } from "lucide-react";
 
 export function Footer() {
@@ -12,15 +12,16 @@ export function Footer() {
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <LogoIsotipo size={32} white />
-            <span
-              className="text-white font-black text-lg tracking-tight"
-            >
-              Digital<span style={{ color: "#2B7BE0" }}>Solutions</span>
-            </span>
-          </div>
+          {/* Logo blanco completo */}
+          <a href="#" aria-label="DigitalSolutions — inicio">
+            <Image
+              src="/logotipo_claro.svg"
+              alt="DigitalSolutions"
+              width={160}
+              height={40}
+              className="h-8 w-auto"
+            />
+          </a>
 
           {/* Slogan */}
           <p
