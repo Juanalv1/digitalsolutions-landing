@@ -51,7 +51,7 @@ export function HeroSection() {
 
           {/* Headline */}
           <motion.h1
-            className="font-black leading-tight text-white mb-6"
+            className="font-bold leading-tight text-white mb-6"
             style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)", lineHeight: 1.1 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -122,7 +122,7 @@ export function HeroSection() {
             ].map((stat) => (
               <div key={stat.label}>
                 <div
-                  className="text-3xl font-black mb-1"
+                  className="text-3xl font-bold mb-1"
                   style={{ color: "#2B7BE0" }}
                 >
                   {stat.value}

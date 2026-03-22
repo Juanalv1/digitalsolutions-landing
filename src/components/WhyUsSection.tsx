@@ -50,13 +50,13 @@ export function WhyUsSection() {
             transition={{ duration: 0.55, ease: "easeOut" }}
           >
             <span
-              className="text-xs font-black uppercase tracking-widest mb-4 block"
+              className="text-xs font-bold uppercase tracking-widest mb-4 block"
               style={{ color: "#2B7BE0" }}
             >
               Por qué elegirnos
             </span>
             <h2
-              className="font-black text-4xl md:text-5xl mb-6 leading-tight"
+              className="font-bold text-4xl md:text-5xl mb-6 leading-tight"
               style={{ color: "#0D1F3C" }}
             >
               Somos el socio tecnológico
@@ -73,7 +73,7 @@ export function WhyUsSection() {
             </p>
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 font-black text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+              className="inline-flex items-center gap-2 font-bold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
               style={{
                 backgroundColor: "#0D1F3C",
                 color: "#FFFFFF",
@@ -114,7 +114,7 @@ export function WhyUsSection() {
                   </div>
                   <div>
                     <h3
-                      className="font-black text-base mb-1.5"
+                      className="font-bold text-base mb-1.5"
                       style={{ color: "#0D1F3C" }}
                     >
                       {reason.title}

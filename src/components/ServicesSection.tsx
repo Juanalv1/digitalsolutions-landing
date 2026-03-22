@@ -50,13 +50,13 @@ export function ServicesSection() {
           transition={{ duration: 0.55, ease: "easeOut" }}
         >
           <span
-            className="text-xs font-black uppercase tracking-widest mb-4 block"
+            className="text-xs font-bold uppercase tracking-widest mb-4 block"
             style={{ color: "#2B7BE0" }}
           >
             Lo que hacemos
           </span>
           <h2
-            className="font-black text-4xl md:text-5xl mb-4"
+            className="font-bold text-4xl md:text-5xl mb-4"
             style={{ color: "#1A1A2E" }}
           >
             Servicios diseñados
@@ -94,7 +94,7 @@ export function ServicesSection() {
               >
                 {service.featured && (
                   <span
-                    className="absolute -top-3.5 left-8 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full"
+                    className="absolute -top-3.5 left-8 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
                     style={{ backgroundColor: "#2B7BE0", color: "#FFFFFF" }}
                   >
                     Más solicitado
@@ -117,7 +117,7 @@ export function ServicesSection() {
                 </div>
 
                 <h3
-                  className="text-xl font-black"
+                  className="text-xl font-bold"
                   style={{ color: service.featured ? "#FFFFFF" : "#1A1A2E" }}
                 >
                   {service.title}

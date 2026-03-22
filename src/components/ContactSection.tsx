@@ -102,13 +102,13 @@ export function ContactSection() {
             transition={{ duration: 0.55, ease: "easeOut" }}
           >
             <span
-              className="text-xs font-black uppercase tracking-widest mb-4 block"
+              className="text-xs font-bold uppercase tracking-widest mb-4 block"
               style={{ color: "#2B7BE0" }}
             >
               Contáctanos
             </span>
             <h2
-              className="font-black text-4xl md:text-5xl mb-6 text-white leading-tight"
+              className="font-bold text-4xl md:text-5xl mb-6 text-white leading-tight"
             >
               ¿Listo para digitalizar
               <br />
@@ -198,7 +198,7 @@ export function ContactSection() {
                   >
                     <Send size={28} style={{ color: "#2B7BE0" }} />
                   </div>
-                  <h3 className="text-xl font-black text-white mb-3">
+                  <h3 className="text-xl font-bold text-white mb-3">
                     ¡Abriendo WhatsApp!
                   </h3>
                   <p style={{ color: "rgba(200,223,254,0.7)" }} className="text-sm">
@@ -211,7 +211,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="nombre"
-                      className="block text-xs font-black uppercase tracking-widest mb-2"
+                      className="block text-xs font-bold uppercase tracking-widest mb-2"
                       style={{ color: "rgba(200,223,254,0.6)" }}
                     >
                       Nombre *
@@ -238,7 +238,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-xs font-black uppercase tracking-widest mb-2"
+                      className="block text-xs font-bold uppercase tracking-widest mb-2"
                       style={{ color: "rgba(200,223,254,0.6)" }}
                     >
                       Email *
@@ -265,7 +265,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="whatsapp"
-                      className="block text-xs font-black uppercase tracking-widest mb-2"
+                      className="block text-xs font-bold uppercase tracking-widest mb-2"
                       style={{ color: "rgba(200,223,254,0.6)" }}
                     >
                       WhatsApp
@@ -287,7 +287,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="servicio"
-                      className="block text-xs font-black uppercase tracking-widest mb-2"
+                      className="block text-xs font-bold uppercase tracking-widest mb-2"
                       style={{ color: "rgba(200,223,254,0.6)" }}
                     >
                       Tipo de servicio
@@ -320,7 +320,7 @@ export function ContactSection() {
                   <div>
                     <label
                       htmlFor="mensaje"
-                      className="block text-xs font-black uppercase tracking-widest mb-2"
+                      className="block text-xs font-bold uppercase tracking-widest mb-2"
                       style={{ color: "rgba(200,223,254,0.6)" }}
                     >
                       Mensaje *
@@ -344,7 +344,7 @@ export function ContactSection() {
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2.5 font-black text-sm px-6 py-4 rounded-xl transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 mt-2"
+                    className="w-full flex items-center justify-center gap-2.5 font-bold text-sm px-6 py-4 rounded-xl transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 mt-2"
                     style={{
                       backgroundColor: "#2B7BE0",
                       color: "#FFFFFF",

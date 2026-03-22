@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800", "900"],
-  variable: "--font-nunito",
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-ibm-plex-sans",
   display: "swap",
 });
 
@@ -33,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={nunito.variable}>
-      <body className={`${nunito.className} antialiased`}>{children}</body>
+    <html lang="es" className={ibmPlexSans.variable}>
+      <body className={`${ibmPlexSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
