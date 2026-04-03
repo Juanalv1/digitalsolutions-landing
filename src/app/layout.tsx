@@ -9,7 +9,7 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
 });
 
-const BASE_URL = "https://site-zeta-silk.vercel.app";
+const BASE_URL = "https://www.digitalsol.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
