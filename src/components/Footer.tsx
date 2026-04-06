@@ -65,21 +65,6 @@ export function Footer() {
           >
             © 2026 DigitalSolutions. Todos los derechos reservados.
           </p>
-          <p
-            className="text-xs"
-            style={{ color: "rgba(200,223,254,0.25)" }}
-          >
-            Built with Claude Web Builder by{" "}
-            <a
-              href="https://tododeia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white/50 transition-colors"
-              style={{ color: "rgba(200,223,254,0.25)" }}
-            >
-              Tododeia
-            </a>
-          </p>
         </div>
       </div>
     </footer>
